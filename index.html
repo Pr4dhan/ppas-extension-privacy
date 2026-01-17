@@ -3,197 +3,581 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - PPAS Token Approval Extension</title>
+    <title>Privacy Policy - PPAS Token Approval Helper</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
         h1 {
             color: #1a73e8;
+            font-size: 32px;
+            margin-bottom: 10px;
             border-bottom: 3px solid #1a73e8;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
         }
+        
         h2 {
             color: #333;
-            margin-top: 30px;
+            font-size: 24px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #1a73e8;
         }
-        .important {
-            background: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #ffc107;
-            margin: 20px 0;
+        
+        h3 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
         }
-        .disclaimer {
-            background: #f8d7da;
-            padding: 15px;
-            border-left: 4px solid #dc3545;
-            margin: 20px 0;
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
         }
-        ul {
-            margin: 10px 0;
-            padding-left: 25px;
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
         }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
         .date {
             color: #666;
             font-style: italic;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        .disclaimer strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .important {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        .important strong {
+            color: #721c24;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            border-left: 4px solid #1a73e8;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        .highlight strong {
+            color: #1565c0;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .summary-box {
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .summary-box p {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2e7d32;
+            margin: 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #1a73e8;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .checkmark {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .crossmark {
+            color: #dc3545;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <h2>PPAS Token Approval Extension</h2>
-    <p class="date">Last Updated: January 17, 2026</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <h2 style="margin-top: 0; border: none; padding: 0;">PPAS Token Approval Helper</h2>
+        <p class="date">Last Updated: January 17, 2026</p>
 
-    <div class="disclaimer">
-        <strong>⚠️ IMPORTANT DISCLAIMER:</strong><br>
-        This extension is NOT officially affiliated with PPAS, Government of Odisha, or any government entity. 
-        It is an unofficial, community-created tool designed to assist authorized PPAS administrators.
-    </div>
+        <div class="important">
+            <strong>⚠️ IMPORTANT DISCLAIMER</strong>
+            <p>This extension is NOT officially affiliated with PPAS (Public Distribution System), 
+            Government of Odisha, or any government entity. It is an unofficial, community-created 
+            tool designed to assist authorized PPAS administrators with token approval automation.</p>
+        </div>
 
-    <h2>1. Overview</h2>
-    <p>
-        The PPAS Token Approval Extension ("the Extension") is designed to help authorized administrators 
-        automate the token approval process on the PPAS portal (ppas.pdsodisha.gov.in). This privacy policy 
-        explains how the Extension handles data.
-    </p>
-
-    <h2>2. Data Collection</h2>
-    <p><strong>We DO NOT collect any personal data.</strong></p>
-    <p>The Extension does not:</p>
-    <ul>
-        <li>❌ Collect, store, or transmit any personal information</li>
-        <li>❌ Track your browsing activity</li>
-        <li>❌ Access your PPAS credentials</li>
-        <li>❌ Store token IDs or approval data</li>
-        <li>❌ Send any data to external servers</li>
-        <li>❌ Use analytics or tracking services</li>
-    </ul>
-
-    <h2>3. Local Storage</h2>
-    <p>The Extension temporarily stores the following data <strong>locally in your browser only</strong>:</p>
-    <ul>
-        <li>Selected expiry date (for current session)</li>
-        <li>Maximum token limit preference (for current session)</li>
-        <li>Start/stop state (temporary flag)</li>
-    </ul>
-    <p>This data:</p>
-    <ul>
-        <li>✅ Never leaves your device</li>
-        <li>✅ Is deleted when you close the browser or clear browsing data</li>
-        <li>✅ Is only used to operate the extension</li>
-    </ul>
-
-    <h2>4. How the Extension Works</h2>
-    <p>The Extension:</p>
-    <ul>
-        <li>Uses your existing PPAS login session (browser cookies)</li>
-        <li>Sends approval requests to ppas.pdsodisha.gov.in on your behalf</li>
-        <li>Processes server responses locally in your browser</li>
-        <li>Does NOT intercept, store, or transmit your credentials</li>
-    </ul>
-
-    <h2>5. Permissions Explained</h2>
-    
-    <h3>Why We Need These Permissions:</h3>
-    
-    <p><strong>"scripting":</strong></p>
-    <p>Allows the Extension to inject automation code into PPAS pages to interact with token approval forms.</p>
-    
-    <p><strong>"activeTab":</strong></p>
-    <p>Allows the Extension to access the currently open PPAS tab to perform automation when you click "Start Approval".</p>
-    
-    <p><strong>"storage":</strong></p>
-    <p>Allows the Extension to save your preferences (expiry date, token limit) locally in your browser.</p>
-    
-    <p><strong>"https://ppas.pdsodisha.gov.in/*":</strong></p>
-    <p>Limits the Extension to only work on the official PPAS website, ensuring it cannot access other websites.</p>
-
-    <h2>6. Third-Party Services</h2>
-    <p>This Extension does NOT use:</p>
-    <ul>
-        <li>❌ Analytics services (Google Analytics, etc.)</li>
-        <li>❌ Tracking pixels or beacons</li>
-        <li>❌ External APIs or servers</li>
-        <li>❌ Advertising networks</li>
-        <li>❌ Any third-party libraries that collect data</li>
-    </ul>
-
-    <h2>7. Data Security</h2>
-    <p>
-        Since the Extension does not collect or transmit any data, there is no risk of data breaches from our Extension. 
-        Your security depends on:
-    </p>
-    <ul>
-        <li>Your PPAS account security practices</li>
-        <li>Your browser's security settings</li>
-        <li>Your device's security</li>
-    </ul>
-
-    <h2>8. User Responsibilities</h2>
-    <p>By using this Extension, you acknowledge that:</p>
-    <ul>
-        <li>You are an authorized PPAS administrator</li>
-        <li>You comply with all PPAS terms of service</li>
-        <li>You are responsible for actions taken using this tool</li>
-        <li>The developer is not liable for any misuse</li>
-    </ul>
-
-    <h2>9. Children's Privacy</h2>
-    <p>
-        This Extension is not intended for use by anyone under the age of 18. We do not knowingly collect 
-        information from children. (In reality, we don't collect information from anyone.)
-    </p>
-
-    <h2>10. Changes to This Policy</h2>
-    <p>
-        We may update this privacy policy from time to time. Any changes will be posted at this URL with 
-        an updated "Last Updated" date. Continued use of the Extension after changes constitutes acceptance 
-        of the revised policy.
-    </p>
-
-    <h2>11. Data Retention</h2>
-    <p>
-        Since we do not collect any data, there is nothing to retain. Any temporary local storage is 
-        automatically cleared when you close your browser or clear browsing data.
-    </p>
-
-    <h2>12. Your Rights</h2>
-    <p>
-        Under data protection regulations (GDPR, CCPA, etc.), you typically have rights regarding your 
-        personal data. However, since this Extension does not collect any personal data, these rights 
-        do not apply in this context.
-    </p>
-
-    <h2>13. Contact Information</h2>
-    <p>If you have questions about this privacy policy or the Extension, please contact:</p>
-    <p><strong>Email:</strong> [your-email@example.com]</p>
-
-    <h2>14. Legal Disclaimer</h2>
-    <div class="important">
-        <p><strong>This is an unofficial, community-created tool.</strong></p>
+        <h2>1. Introduction</h2>
         <p>
-            This Extension is NOT endorsed, affiliated with, or supported by PPAS, Government of Odisha, 
-            or any government agency. Use at your own risk. The developer assumes no liability for any 
-            issues arising from the use of this Extension.
+            The PPAS Token Approval Helper ("the Extension," "we," "our") is a Chrome browser 
+            extension that helps authorized administrators automate token approval processes on 
+            the PPAS portal at ppas.pdsodisha.gov.in. This privacy policy explains how the 
+            Extension handles data and protects your privacy.
         </p>
+
+        <div class="summary-box">
+            <p>TL;DR: We DO NOT collect, store, or transmit ANY personal data. Everything happens locally in your browser.</p>
+        </div>
+
+        <h2>2. Data Collection - What We DON'T Collect</h2>
+        <p><strong>The Extension does NOT collect any personal data whatsoever.</strong></p>
+        
+        <p>We do NOT collect, store, transmit, or process:</p>
+        <ul>
+            <li><span class="crossmark">❌</span> Personal identification information (name, email, address, phone number)</li>
+            <li><span class="crossmark">❌</span> PPAS login credentials (username, password, session tokens)</li>
+            <li><span class="crossmark">❌</span> Token IDs or token approval details</li>
+            <li><span class="crossmark">❌</span> PACS or PPC organizational data</li>
+            <li><span class="crossmark">❌</span> Browsing history or web activity</li>
+            <li><span class="crossmark">❌</span> IP addresses or location data</li>
+            <li><span class="crossmark">❌</span> Device information or system details</li>
+            <li><span class="crossmark">❌</span> User behavior or usage analytics</li>
+            <li><span class="crossmark">❌</span> Cookies or tracking identifiers</li>
+        </ul>
+
+        <h2>3. Local Storage - What We Store Temporarily</h2>
+        <p>
+            The Extension uses Chrome's local storage API (<code>chrome.storage.local</code>) to 
+            temporarily store user preferences <strong>only on your device</strong>:
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Purpose</th>
+                    <th>Storage Duration</th>
+                    <th>Transmitted?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Selected PACS code</td>
+                    <td>Remember your filter preference</td>
+                    <td>Until browser is closed or data cleared</td>
+                    <td><span class="crossmark">❌ No</span></td>
+                </tr>
+                <tr>
+                    <td>Selected PPC code</td>
+                    <td>Remember your filter preference</td>
+                    <td>Until browser is closed or data cleared</td>
+                    <td><span class="crossmark">❌ No</span></td>
+                </tr>
+                <tr>
+                    <td>Expiry date selection</td>
+                    <td>Remember your date input</td>
+                    <td>Until browser is closed or data cleared</td>
+                    <td><span class="crossmark">❌ No</span></td>
+                </tr>
+                <tr>
+                    <td>Token limit number</td>
+                    <td>Remember your processing limit</td>
+                    <td>Until browser is closed or data cleared</td>
+                    <td><span class="crossmark">❌ No</span></td>
+                </tr>
+                <tr>
+                    <td>Stop/start state flag</td>
+                    <td>Track approval process state</td>
+                    <td>During approval process only</td>
+                    <td><span class="crossmark">❌ No</span></td>
+                </tr>
+                <tr>
+                    <td>Fetched token IDs</td>
+                    <td>Store tokens between fetch and approval</td>
+                    <td>Until approval completes or page refresh</td>
+                    <td><span class="crossmark">❌ No</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight">
+            <strong>🔒 Important Security Note</strong>
+            <p>All data stored locally using chrome.storage.local:</p>
+            <ul>
+                <li><span class="checkmark">✓</span> Never leaves your device</li>
+                <li><span class="checkmark">✓</span> Is NOT transmitted to any external servers</li>
+                <li><span class="checkmark">✓</span> Is automatically cleared when you clear browser data</li>
+                <li><span class="checkmark">✓</span> Is only accessible by this Extension on your device</li>
+            </ul>
+        </div>
+
+        <h2>4. How the Extension Works</h2>
+        <p>The Extension operates entirely within your browser:</p>
+        
+        <ol>
+            <li><strong>Uses Your Existing Session:</strong> The Extension uses your existing PPAS 
+            login session (browser cookies) to authenticate API requests. It does NOT access, store, 
+            or transmit your credentials.</li>
+            
+            <li><strong>Sends Approval Requests:</strong> When you click "Start Approval," the Extension 
+            sends POST requests to ppas.pdsodisha.gov.in on your behalf, just like manual approval.</li>
+            
+            <li><strong>Processes Responses Locally:</strong> Server responses (HTML data) are parsed 
+            locally in your browser using JavaScript's DOMParser. No data is sent to external servers.</li>
+            
+            <li><strong>Displays Results:</strong> The Extension shows progress and results directly in 
+            the popup interface. All processing happens client-side.</li>
+        </ol>
+
+        <h2>5. Network Communication</h2>
+        <p>The Extension communicates ONLY with the PPAS portal:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Purpose</th>
+                    <th>Data Sent</th>
+                    <th>Data Received</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ppas.pdsodisha.gov.in/fetchExtendToken</td>
+                    <td>Fetch pending tokens</td>
+                    <td>PACS code, PPC code, expiry date, year, season</td>
+                    <td>HTML table with pending tokens</td>
+                </tr>
+                <tr>
+                    <td>ppas.pdsodisha.gov.in/tokenDetailApprove</td>
+                    <td>Approve tokens</td>
+                    <td>Token ID, expiry date, approval action, PACS/PPC codes</td>
+                    <td>Approval confirmation response</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="disclaimer">
+            <strong>⚠️ Important Network Note</strong>
+            <p>The Extension does NOT communicate with any servers other than ppas.pdsodisha.gov.in. 
+            There are NO analytics servers, tracking servers, or third-party APIs involved.</p>
+        </div>
+
+        <h2>6. Permissions Explained</h2>
+        <p>The Extension requests the following Chrome permissions:</p>
+
+        <h3>6.1. "scripting" Permission</h3>
+        <p>
+            <strong>Why needed:</strong> To inject automation code into PPAS web pages for interacting 
+            with token approval forms and parsing HTML responses.
+        </p>
+        <p>
+            <strong>Privacy impact:</strong> This permission allows the Extension to read and modify 
+            content on ppas.pdsodisha.gov.in pages only. It does NOT allow access to other websites.
+        </p>
+
+        <h3>6.2. "activeTab" Permission</h3>
+        <p>
+            <strong>Why needed:</strong> To access the currently active PPAS tab when you click 
+            "Fetch Tokens" or "Start Approval" buttons.
+        </p>
+        <p>
+            <strong>Privacy impact:</strong> This permission only grants temporary access to the 
+            active tab and only when you explicitly trigger an action. The Extension cannot monitor 
+            your browsing in the background.
+        </p>
+
+        <h3>6.3. "storage" Permission</h3>
+        <p>
+            <strong>Why needed:</strong> To save your preferences (PACS, PPC, date, token limit) 
+            locally using chrome.storage.local API.
+        </p>
+        <p>
+            <strong>Privacy impact:</strong> Data is stored only on your device and never synchronized 
+            or transmitted. You can clear this data anytime by clearing browser data.
+        </p>
+
+        <h3>6.4. Host Permission: "https://ppas.pdsodisha.gov.in/*"</h3>
+        <p>
+            <strong>Why needed:</strong> To send API requests to PPAS portal endpoints for fetching 
+            and approving tokens.
+        </p>
+        <p>
+            <strong>Privacy impact:</strong> This restricts the Extension to ONLY work on the PPAS 
+            portal. It cannot access any other websites or domains.
+        </p>
+
+        <h2>7. Third-Party Services</h2>
+        <p>The Extension does NOT use any third-party services:</p>
+        <ul>
+            <li><span class="crossmark">❌</span> No analytics or tracking services (Google Analytics, etc.)</li>
+            <li><span class="crossmark">❌</span> No advertising networks or affiliates</li>
+            <li><span class="crossmark">❌</span> No external APIs or cloud services</li>
+            <li><span class="crossmark">❌</span> No content delivery networks (CDNs) for code</li>
+            <li><span class="crossmark">❌</span> No crash reporting or error tracking services</li>
+            <li><span class="crossmark">❌</span> No social media integrations</li>
+        </ul>
+
+        <h2>8. Data Security</h2>
+        <p>
+            Since the Extension does not collect or transmit any data, there is minimal security risk. 
+            However, your security depends on:
+        </p>
+        <ul>
+            <li><span class="checkmark">✓</span> <strong>Your PPAS Account Security:</strong> Use strong passwords and enable two-factor authentication if available</li>
+            <li><span class="checkmark">✓</span> <strong>Browser Security:</strong> Keep Chrome updated and use security extensions as needed</li>
+            <li><span class="checkmark">✓</span> <strong>Device Security:</strong> Use antivirus software and keep your operating system updated</li>
+            <li><span class="checkmark">✓</span> <strong>Network Security:</strong> Use secure networks when accessing PPAS portal</li>
+        </ul>
+
+        <h2>9. User Responsibilities</h2>
+        <p>By using this Extension, you acknowledge and agree that:</p>
+        <ol>
+            <li>You are an authorized PPAS administrator with proper approval permissions</li>
+            <li>You will comply with all PPAS terms of service and policies</li>
+            <li>You are responsible for all actions taken using this Extension</li>
+            <li>You will not use this Extension for unauthorized purposes</li>
+            <li>You understand this is an unofficial tool not endorsed by PPAS or government entities</li>
+        </ol>
+
+        <h2>10. Children's Privacy</h2>
+        <p>
+            This Extension is NOT intended for use by anyone under the age of 18. The Extension is 
+            designed for professional use by authorized PPAS administrators. We do not knowingly 
+            collect information from minors. (In practice, we don't collect information from anyone.)
+        </p>
+
+        <h2>11. Data Retention</h2>
+        <p>
+            Since the Extension does not collect any data, there is nothing to retain. Temporary 
+            local storage is automatically cleared when:
+        </p>
+        <ul>
+            <li>You close your browser (session-based data)</li>
+            <li>You clear browser data or cookies</li>
+            <li>You uninstall the Extension</li>
+            <li>The approval process completes (for fetched token IDs)</li>
+        </ul>
+
+        <h2>12. Your Rights Under Data Protection Laws</h2>
+        <p>
+            Under regulations like GDPR (Europe), CCPA (California), and other data protection laws, 
+            users typically have rights such as:
+        </p>
+        <ul>
+            <li>Right to access personal data</li>
+            <li>Right to rectification</li>
+            <li>Right to erasure ("right to be forgotten")</li>
+            <li>Right to data portability</li>
+            <li>Right to object to processing</li>
+        </ul>
+        <p>
+            <strong>However, since this Extension does not collect any personal data, these rights 
+            do not apply in this context.</strong> There is no personal data to access, rectify, 
+            erase, or port.
+        </p>
+
+        <h2>13. Cookies and Tracking</h2>
+        <p>
+            The Extension itself does NOT set any cookies or use any tracking technologies. However:
+        </p>
+        <ul>
+            <li>The Extension uses your existing PPAS session cookies (set by ppas.pdsodisha.gov.in) 
+            to authenticate API requests</li>
+            <li>These cookies are managed by the PPAS portal, not by the Extension</li>
+            <li>The Extension does NOT read, modify, or transmit cookie data</li>
+            <li>The Extension does NOT implement any tracking pixels, beacons, or fingerprinting</li>
+        </ul>
+
+        <h2>14. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this privacy policy from time to time to reflect changes in the Extension's 
+            functionality or legal requirements. When we make changes:
+        </p>
+        <ul>
+            <li>The "Last Updated" date at the top will be revised</li>
+            <li>Significant changes will be highlighted in the Chrome Web Store listing</li>
+            <li>Continued use of the Extension after changes constitutes acceptance of the updated policy</li>
+        </ul>
+        <p>
+            We recommend checking this page periodically for updates.
+        </p>
+
+        <h2>15. International Data Transfers</h2>
+        <p>
+            Since the Extension does not collect or transmit any data to external servers, there are 
+            no international data transfers. All processing happens locally in your browser, regardless 
+            of your geographic location.
+        </p>
+
+        <h2>16. Legal Basis for Processing (GDPR)</h2>
+        <p>
+            Under GDPR, data processing must have a legal basis. In this case:
+        </p>
+        <ul>
+            <li><strong>Legitimate Interest:</strong> The Extension processes minimal local data 
+            (preferences) based on legitimate interest in providing functionality</li>
+            <li><strong>Consent:</strong> By installing and using the Extension, you consent to 
+            local storage of preferences</li>
+            <li><strong>No Personal Data:</strong> Since no personal data is collected or processed, 
+            most GDPR obligations do not apply</li>
+        </ul>
+
+        <h2>17. Contact Information</h2>
+        <p>If you have questions, concerns, or requests regarding this privacy policy or the Extension:</p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a><br>
+            <strong>Response Time:</strong> We aim to respond within 48-72 hours
+        </p>
+        <p>Please include:</p>
+        <ul>
+            <li>Subject line: "PPAS Extension Privacy Inquiry"</li>
+            <li>Your specific question or concern</li>
+            <li>Chrome version and Extension version (if technical issue)</li>
+        </ul>
+
+        <h2>18. Legal Disclaimer and Liability</h2>
+        <div class="important">
+            <strong>⚠️ IMPORTANT LEGAL NOTICE</strong>
+            <p>
+                <strong>Unofficial Tool:</strong> This Extension is NOT endorsed, affiliated with, 
+                or supported by PPAS, Government of Odisha, or any government agency.
+            </p>
+            <p>
+                <strong>No Warranty:</strong> The Extension is provided "as is" without warranty of 
+                any kind, express or implied, including but not limited to warranties of merchantability, 
+                fitness for a particular purpose, or non-infringement.
+            </p>
+            <p>
+                <strong>Limitation of Liability:</strong> The developer shall not be liable for any 
+                direct, indirect, incidental, special, consequential, or punitive damages arising from 
+                the use or inability to use this Extension.
+            </p>
+            <p>
+                <strong>User Responsibility:</strong> You assume all responsibility and risk for the 
+                use of this Extension and agree to comply with all applicable laws, regulations, and 
+                PPAS policies.
+            </p>
+        </div>
+
+        <h2>19. Consent and Acceptance</h2>
+        <p>
+            By installing, accessing, or using the PPAS Token Approval Helper Extension, you:
+        </p>
+        <ol>
+            <li>Acknowledge that you have read and understood this privacy policy</li>
+            <li>Consent to the practices described in this privacy policy</li>
+            <li>Confirm that you are an authorized PPAS administrator</li>
+            <li>Accept the terms and limitations outlined in this policy</li>
+            <li>Agree to use the Extension in compliance with all applicable laws and regulations</li>
+        </ol>
+
+        <h2>20. Summary - Key Takeaways</h2>
+        <div class="highlight">
+            <strong>📋 Privacy Policy Summary</strong>
+            <ul>
+                <li><span class="checkmark">✓</span> We do NOT collect any personal data</li>
+                <li><span class="checkmark">✓</span> All processing happens locally in your browser</li>
+                <li><span class="checkmark">✓</span> No data is transmitted to external servers</li>
+                <li><span class="checkmark">✓</span> Temporary preferences stored locally only</li>
+                <li><span class="checkmark">✓</span> No analytics, tracking, or third-party services</li>
+                <li><span class="checkmark">✓</span> Extension only communicates with PPAS portal</li>
+                <li><span class="checkmark">✓</span> You maintain full control over your data</li>
+            </ul>
+        </div>
+
+        <div class="summary-box">
+            <p><strong>Bottom Line:</strong> Your privacy is protected. This Extension is designed with 
+            privacy-first principles and does not collect, store, or share any of your personal information.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>PPAS Token Approval Helper</strong></p>
+            <p>An unofficial, community-created tool for PPAS administrators</p>
+            <p>Not affiliated with PPAS or Government of Odisha</p>
+            <p style="margin-top: 20px;">Last Updated: January 17, 2026</p>
+        </div>
     </div>
-
-    <h2>15. Consent</h2>
-    <p>
-        By installing and using the PPAS Token Approval Extension, you consent to this privacy policy 
-        and confirm that you are an authorized user of the PPAS portal.
-    </p>
-
-    <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-    
-    <p style="text-align: center; color: #666; font-size: 14px;">
-        <strong>Summary:</strong> This Extension does not collect, store, or share any user data. 
-        All processing happens locally in your browser.
-    </p>
 </body>
 </html>
