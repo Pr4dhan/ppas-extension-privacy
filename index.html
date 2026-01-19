@@ -16,134 +16,147 @@
             line-height: 1.7;
             color: #333;
             background: #f5f5f5;
-            padding: 20px;
+            padding: 10px;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
         h1 {
             color: #1a73e8;
-            font-size: 32px;
+            font-size: 24px;
             margin-bottom: 10px;
             border-bottom: 3px solid #1a73e8;
             padding-bottom: 15px;
+            word-wrap: break-word;
         }
         
         h2 {
             color: #333;
-            font-size: 24px;
-            margin-top: 35px;
+            font-size: 20px;
+            margin-top: 30px;
             margin-bottom: 15px;
             padding-left: 10px;
             border-left: 4px solid #1a73e8;
+            word-wrap: break-word;
         }
         
         h3 {
             color: #555;
-            font-size: 18px;
-            margin-top: 25px;
+            font-size: 16px;
+            margin-top: 20px;
             margin-bottom: 10px;
+            word-wrap: break-word;
         }
         
         p {
             margin-bottom: 15px;
             text-align: justify;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         
         ul, ol {
             margin: 15px 0;
-            padding-left: 30px;
+            padding-left: 25px;
         }
         
         li {
             margin-bottom: 8px;
+            word-wrap: break-word;
         }
         
         .date {
             color: #666;
             font-style: italic;
-            font-size: 14px;
-            margin-bottom: 30px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        
+        .disclaimer, .important, .highlight {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            word-wrap: break-word;
         }
         
         .disclaimer {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 5px;
         }
         
         .disclaimer strong {
             color: #856404;
             display: block;
             margin-bottom: 10px;
-            font-size: 16px;
+            font-size: 15px;
         }
         
         .important {
             background: #f8d7da;
             border-left: 4px solid #dc3545;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 5px;
         }
         
         .important strong {
             color: #721c24;
             display: block;
             margin-bottom: 10px;
-            font-size: 16px;
+            font-size: 15px;
         }
         
         .highlight {
             background: #e3f2fd;
             border-left: 4px solid #1a73e8;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 5px;
         }
         
         .highlight strong {
             color: #1565c0;
             display: block;
             margin-bottom: 10px;
-            font-size: 16px;
+            font-size: 15px;
         }
         
         .summary-box {
             background: #e8f5e9;
             border: 2px solid #4caf50;
-            padding: 25px;
-            margin: 30px 0;
+            padding: 20px;
+            margin: 25px 0;
             border-radius: 8px;
             text-align: center;
         }
         
         .summary-box p {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             color: #2e7d32;
             margin: 0;
+            word-wrap: break-word;
+        }
+        
+        /* Responsive table wrapper */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+            -webkit-overflow-scrolling: touch;
         }
         
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            min-width: 500px;
         }
         
         th, td {
-            padding: 12px;
+            padding: 10px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+            font-size: 14px;
         }
         
         th {
@@ -157,17 +170,18 @@
         }
         
         .footer {
-            margin-top: 50px;
-            padding-top: 30px;
+            margin-top: 40px;
+            padding-top: 25px;
             border-top: 2px solid #ddd;
             text-align: center;
             color: #666;
-            font-size: 14px;
+            font-size: 13px;
         }
         
         a {
             color: #1a73e8;
             text-decoration: none;
+            word-wrap: break-word;
         }
         
         a:hover {
@@ -182,6 +196,144 @@
         .crossmark {
             color: #dc3545;
             font-weight: bold;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 13px;
+            word-wrap: break-word;
+        }
+        
+        /* Medium screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            h2 {
+                font-size: 18px;
+                margin-top: 25px;
+                padding-left: 8px;
+            }
+            
+            h3 {
+                font-size: 15px;
+            }
+            
+            ul, ol {
+                padding-left: 20px;
+            }
+            
+            .disclaimer, .important, .highlight {
+                padding: 12px;
+            }
+            
+            .summary-box {
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 8px;
+                font-size: 13px;
+            }
+        }
+        
+        /* Small screens */
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+                font-size: 14px;
+            }
+            
+            .container {
+                padding: 12px;
+                border-radius: 5px;
+            }
+            
+            h1 {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            
+            h2 {
+                font-size: 17px;
+                margin-top: 20px;
+                margin-bottom: 12px;
+                padding-left: 6px;
+                border-left: 3px solid #1a73e8;
+            }
+            
+            h3 {
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            
+            p {
+                text-align: left;
+                font-size: 14px;
+            }
+            
+            ul, ol {
+                padding-left: 18px;
+            }
+            
+            li {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+            
+            .date {
+                font-size: 12px;
+            }
+            
+            .disclaimer, .important, .highlight {
+                padding: 10px;
+                margin: 15px 0;
+            }
+            
+            .disclaimer strong, .important strong, .highlight strong {
+                font-size: 14px;
+            }
+            
+            .summary-box {
+                padding: 12px;
+                margin: 20px 0;
+            }
+            
+            .summary-box p {
+                font-size: 14px;
+            }
+            
+            table {
+                min-width: 450px;
+                font-size: 12px;
+            }
+            
+            th, td {
+                padding: 6px;
+                font-size: 12px;
+            }
+            
+            code {
+                font-size: 12px;
+                padding: 1px 4px;
+            }
+            
+            .footer {
+                margin-top: 30px;
+                padding-top: 20px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -215,15 +367,15 @@
         
         <p>We do NOT collect, store, transmit, or process:</p>
         <ul>
-            <li><span class="crossmark">❌</span> Personal identification information (name, email, address, phone number)</li>
-            <li><span class="crossmark">❌</span> PPAS login credentials (username, password, session tokens)</li>
-            <li><span class="crossmark">❌</span> Token IDs or token approval details</li>
-            <li><span class="crossmark">❌</span> PACS or PPC organizational data</li>
-            <li><span class="crossmark">❌</span> Browsing history or web activity</li>
-            <li><span class="crossmark">❌</span> IP addresses or location data</li>
-            <li><span class="crossmark">❌</span> Device information or system details</li>
-            <li><span class="crossmark">❌</span> User behavior or usage analytics</li>
-            <li><span class="crossmark">❌</span> Cookies or tracking identifiers</li>
+            <li><span class="crossmark">❌</span> Personal identification information</li>
+            <li><span class="crossmark">❌</span> PPAS login credentials</li>
+            <li><span class="crossmark">❌</span> Token IDs or approval details</li>
+            <li><span class="crossmark">❌</span> PACS or PPC data</li>
+            <li><span class="crossmark">❌</span> Browsing history</li>
+            <li><span class="crossmark">❌</span> IP addresses or location</li>
+            <li><span class="crossmark">❌</span> Device information</li>
+            <li><span class="crossmark">❌</span> User behavior or analytics</li>
+            <li><span class="crossmark">❌</span> Cookies or tracking IDs</li>
         </ul>
 
         <h2>3. Local Storage - What We Store Temporarily</h2>
@@ -232,63 +384,65 @@
             temporarily store user preferences <strong>only on your device</strong>:
         </p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Purpose</th>
-                    <th>Storage Duration</th>
-                    <th>Transmitted?</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Selected PACS code</td>
-                    <td>Remember your filter preference</td>
-                    <td>Until browser is closed or data cleared</td>
-                    <td><span class="crossmark">❌ No</span></td>
-                </tr>
-                <tr>
-                    <td>Selected PPC code</td>
-                    <td>Remember your filter preference</td>
-                    <td>Until browser is closed or data cleared</td>
-                    <td><span class="crossmark">❌ No</span></td>
-                </tr>
-                <tr>
-                    <td>Expiry date selection</td>
-                    <td>Remember your date input</td>
-                    <td>Until browser is closed or data cleared</td>
-                    <td><span class="crossmark">❌ No</span></td>
-                </tr>
-                <tr>
-                    <td>Token limit number</td>
-                    <td>Remember your processing limit</td>
-                    <td>Until browser is closed or data cleared</td>
-                    <td><span class="crossmark">❌ No</span></td>
-                </tr>
-                <tr>
-                    <td>Stop/start state flag</td>
-                    <td>Track approval process state</td>
-                    <td>During approval process only</td>
-                    <td><span class="crossmark">❌ No</span></td>
-                </tr>
-                <tr>
-                    <td>Fetched token IDs</td>
-                    <td>Store tokens between fetch and approval</td>
-                    <td>Until approval completes or page refresh</td>
-                    <td><span class="crossmark">❌ No</span></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                        <th>Transmitted?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Selected PACS code</td>
+                        <td>Remember filter preference</td>
+                        <td>Until browser closed</td>
+                        <td><span class="crossmark">❌ No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Selected PPC code</td>
+                        <td>Remember filter preference</td>
+                        <td>Until browser closed</td>
+                        <td><span class="crossmark">❌ No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Expiry date selection</td>
+                        <td>Remember date input</td>
+                        <td>Until browser closed</td>
+                        <td><span class="crossmark">❌ No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Token limit number</td>
+                        <td>Remember processing limit</td>
+                        <td>Until browser closed</td>
+                        <td><span class="crossmark">❌ No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Stop/start state flag</td>
+                        <td>Track approval state</td>
+                        <td>During process only</td>
+                        <td><span class="crossmark">❌ No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Fetched token IDs</td>
+                        <td>Store tokens temporarily</td>
+                        <td>Until approval completes</td>
+                        <td><span class="crossmark">❌ No</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="highlight">
             <strong>🔒 Important Security Note</strong>
             <p>All data stored locally using chrome.storage.local:</p>
             <ul>
                 <li><span class="checkmark">✓</span> Never leaves your device</li>
-                <li><span class="checkmark">✓</span> Is NOT transmitted to any external servers</li>
-                <li><span class="checkmark">✓</span> Is automatically cleared when you clear browser data</li>
-                <li><span class="checkmark">✓</span> Is only accessible by this Extension on your device</li>
+                <li><span class="checkmark">✓</span> Is NOT transmitted to external servers</li>
+                <li><span class="checkmark">✓</span> Is cleared when you clear browser data</li>
+                <li><span class="checkmark">✓</span> Is only accessible by this Extension</li>
             </ul>
         </div>
 
@@ -301,42 +455,44 @@
             or transmit your credentials.</li>
             
             <li><strong>Sends Approval Requests:</strong> When you click "Start Approval," the Extension 
-            sends POST requests to ppas.pdsodisha.gov.in on your behalf, just like manual approval.</li>
+            sends POST requests to ppas.pdsodisha.gov.in on your behalf.</li>
             
-            <li><strong>Processes Responses Locally:</strong> Server responses (HTML data) are parsed 
-            locally in your browser using JavaScript's DOMParser. No data is sent to external servers.</li>
+            <li><strong>Processes Responses Locally:</strong> Server responses are parsed locally 
+            in your browser. No data is sent to external servers.</li>
             
-            <li><strong>Displays Results:</strong> The Extension shows progress and results directly in 
-            the popup interface. All processing happens client-side.</li>
+            <li><strong>Displays Results:</strong> The Extension shows progress and results directly 
+            in the popup interface.</li>
         </ol>
 
         <h2>5. Network Communication</h2>
         <p>The Extension communicates ONLY with the PPAS portal:</p>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Endpoint</th>
-                    <th>Purpose</th>
-                    <th>Data Sent</th>
-                    <th>Data Received</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ppas.pdsodisha.gov.in/fetchExtendToken</td>
-                    <td>Fetch pending tokens</td>
-                    <td>PACS code, PPC code, expiry date, year, season</td>
-                    <td>HTML table with pending tokens</td>
-                </tr>
-                <tr>
-                    <td>ppas.pdsodisha.gov.in/tokenDetailApprove</td>
-                    <td>Approve tokens</td>
-                    <td>Token ID, expiry date, approval action, PACS/PPC codes</td>
-                    <td>Approval confirmation response</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Purpose</th>
+                        <th>Data Sent</th>
+                        <th>Data Received</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ppas.pdsodisha.gov.in/fetchExtendToken</td>
+                        <td>Fetch pending tokens</td>
+                        <td>PACS, PPC, date, year, season</td>
+                        <td>HTML table with tokens</td>
+                    </tr>
+                    <tr>
+                        <td>ppas.pdsodisha.gov.in/tokenDetailApprove</td>
+                        <td>Approve tokens</td>
+                        <td>Token ID, date, action, codes</td>
+                        <td>Approval confirmation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="disclaimer">
             <strong>⚠️ Important Network Note</strong>
@@ -350,52 +506,50 @@
         <h3>6.1. "scripting" Permission</h3>
         <p>
             <strong>Why needed:</strong> To inject automation code into PPAS web pages for interacting 
-            with token approval forms and parsing HTML responses.
+            with token approval forms.
         </p>
         <p>
             <strong>Privacy impact:</strong> This permission allows the Extension to read and modify 
-            content on ppas.pdsodisha.gov.in pages only. It does NOT allow access to other websites.
+            content on ppas.pdsodisha.gov.in pages only.
         </p>
 
         <h3>6.2. "activeTab" Permission</h3>
         <p>
-            <strong>Why needed:</strong> To access the currently active PPAS tab when you click 
-            "Fetch Tokens" or "Start Approval" buttons.
+            <strong>Why needed:</strong> To access the currently active PPAS tab when you click action buttons.
         </p>
         <p>
-            <strong>Privacy impact:</strong> This permission only grants temporary access to the 
-            active tab and only when you explicitly trigger an action. The Extension cannot monitor 
-            your browsing in the background.
+            <strong>Privacy impact:</strong> This permission only grants temporary access when you 
+            explicitly trigger an action.
         </p>
 
         <h3>6.3. "storage" Permission</h3>
         <p>
-            <strong>Why needed:</strong> To save your preferences (PACS, PPC, date, token limit) 
-            locally using chrome.storage.local API.
+            <strong>Why needed:</strong> To save your preferences locally.
         </p>
         <p>
             <strong>Privacy impact:</strong> Data is stored only on your device and never synchronized 
-            or transmitted. You can clear this data anytime by clearing browser data.
+            or transmitted.
         </p>
 
-        <h3>6.4. Host Permission: "https://ppas.pdsodisha.gov.in/*"</h3>
+        <h3>6.4. Host Permission</h3>
         <p>
-            <strong>Why needed:</strong> To send API requests to PPAS portal endpoints for fetching 
-            and approving tokens.
+            <strong>Permission:</strong> "https://ppas.pdsodisha.gov.in/*"
         </p>
         <p>
-            <strong>Privacy impact:</strong> This restricts the Extension to ONLY work on the PPAS 
-            portal. It cannot access any other websites or domains.
+            <strong>Why needed:</strong> To send API requests to PPAS portal endpoints.
+        </p>
+        <p>
+            <strong>Privacy impact:</strong> This restricts the Extension to ONLY work on the PPAS portal.
         </p>
 
         <h2>7. Third-Party Services</h2>
         <p>The Extension does NOT use any third-party services:</p>
         <ul>
-            <li><span class="crossmark">❌</span> No analytics or tracking services (Google Analytics, etc.)</li>
-            <li><span class="crossmark">❌</span> No advertising networks or affiliates</li>
+            <li><span class="crossmark">❌</span> No analytics or tracking services</li>
+            <li><span class="crossmark">❌</span> No advertising networks</li>
             <li><span class="crossmark">❌</span> No external APIs or cloud services</li>
-            <li><span class="crossmark">❌</span> No content delivery networks (CDNs) for code</li>
-            <li><span class="crossmark">❌</span> No crash reporting or error tracking services</li>
+            <li><span class="crossmark">❌</span> No content delivery networks (CDNs)</li>
+            <li><span class="crossmark">❌</span> No crash reporting services</li>
             <li><span class="crossmark">❌</span> No social media integrations</li>
         </ul>
 
@@ -405,27 +559,26 @@
             However, your security depends on:
         </p>
         <ul>
-            <li><span class="checkmark">✓</span> <strong>Your PPAS Account Security:</strong> Use strong passwords and enable two-factor authentication if available</li>
-            <li><span class="checkmark">✓</span> <strong>Browser Security:</strong> Keep Chrome updated and use security extensions as needed</li>
-            <li><span class="checkmark">✓</span> <strong>Device Security:</strong> Use antivirus software and keep your operating system updated</li>
-            <li><span class="checkmark">✓</span> <strong>Network Security:</strong> Use secure networks when accessing PPAS portal</li>
+            <li><span class="checkmark">✓</span> <strong>PPAS Account Security:</strong> Use strong passwords</li>
+            <li><span class="checkmark">✓</span> <strong>Browser Security:</strong> Keep Chrome updated</li>
+            <li><span class="checkmark">✓</span> <strong>Device Security:</strong> Use antivirus software</li>
+            <li><span class="checkmark">✓</span> <strong>Network Security:</strong> Use secure networks</li>
         </ul>
 
         <h2>9. User Responsibilities</h2>
-        <p>By using this Extension, you acknowledge and agree that:</p>
+        <p>By using this Extension, you acknowledge that:</p>
         <ol>
-            <li>You are an authorized PPAS administrator with proper approval permissions</li>
-            <li>You will comply with all PPAS terms of service and policies</li>
-            <li>You are responsible for all actions taken using this Extension</li>
-            <li>You will not use this Extension for unauthorized purposes</li>
-            <li>You understand this is an unofficial tool not endorsed by PPAS or government entities</li>
+            <li>You are an authorized PPAS administrator</li>
+            <li>You will comply with all PPAS policies</li>
+            <li>You are responsible for all actions taken</li>
+            <li>You will not use this for unauthorized purposes</li>
+            <li>You understand this is an unofficial tool</li>
         </ol>
 
         <h2>10. Children's Privacy</h2>
         <p>
             This Extension is NOT intended for use by anyone under the age of 18. The Extension is 
-            designed for professional use by authorized PPAS administrators. We do not knowingly 
-            collect information from minors. (In practice, we don't collect information from anyone.)
+            designed for professional use by authorized PPAS administrators.
         </p>
 
         <h2>11. Data Retention</h2>
@@ -434,123 +587,100 @@
             local storage is automatically cleared when:
         </p>
         <ul>
-            <li>You close your browser (session-based data)</li>
+            <li>You close your browser</li>
             <li>You clear browser data or cookies</li>
             <li>You uninstall the Extension</li>
-            <li>The approval process completes (for fetched token IDs)</li>
+            <li>The approval process completes</li>
         </ul>
 
         <h2>12. Your Rights Under Data Protection Laws</h2>
         <p>
-            Under regulations like GDPR (Europe), CCPA (California), and other data protection laws, 
-            users typically have rights such as:
+            Under regulations like GDPR, CCPA, and other data protection laws, users typically have rights such as:
         </p>
         <ul>
             <li>Right to access personal data</li>
             <li>Right to rectification</li>
-            <li>Right to erasure ("right to be forgotten")</li>
+            <li>Right to erasure</li>
             <li>Right to data portability</li>
             <li>Right to object to processing</li>
         </ul>
         <p>
             <strong>However, since this Extension does not collect any personal data, these rights 
-            do not apply in this context.</strong> There is no personal data to access, rectify, 
-            erase, or port.
+            do not apply in this context.</strong>
         </p>
 
         <h2>13. Cookies and Tracking</h2>
-        <p>
-            The Extension itself does NOT set any cookies or use any tracking technologies. However:
-        </p>
+        <p>The Extension itself does NOT set any cookies or use any tracking technologies. However:</p>
         <ul>
-            <li>The Extension uses your existing PPAS session cookies (set by ppas.pdsodisha.gov.in) 
-            to authenticate API requests</li>
-            <li>These cookies are managed by the PPAS portal, not by the Extension</li>
+            <li>The Extension uses your existing PPAS session cookies</li>
+            <li>These cookies are managed by the PPAS portal</li>
             <li>The Extension does NOT read, modify, or transmit cookie data</li>
-            <li>The Extension does NOT implement any tracking pixels, beacons, or fingerprinting</li>
+            <li>No tracking pixels, beacons, or fingerprinting</li>
         </ul>
 
         <h2>14. Changes to This Privacy Policy</h2>
         <p>
-            We may update this privacy policy from time to time to reflect changes in the Extension's 
-            functionality or legal requirements. When we make changes:
+            We may update this privacy policy from time to time. When we make changes:
         </p>
         <ul>
-            <li>The "Last Updated" date at the top will be revised</li>
-            <li>Significant changes will be highlighted in the Chrome Web Store listing</li>
-            <li>Continued use of the Extension after changes constitutes acceptance of the updated policy</li>
+            <li>The "Last Updated" date will be revised</li>
+            <li>Significant changes will be highlighted</li>
+            <li>Continued use constitutes acceptance</li>
         </ul>
-        <p>
-            We recommend checking this page periodically for updates.
-        </p>
 
         <h2>15. International Data Transfers</h2>
         <p>
             Since the Extension does not collect or transmit any data to external servers, there are 
-            no international data transfers. All processing happens locally in your browser, regardless 
-            of your geographic location.
+            no international data transfers. All processing happens locally in your browser.
         </p>
 
         <h2>16. Legal Basis for Processing (GDPR)</h2>
-        <p>
-            Under GDPR, data processing must have a legal basis. In this case:
-        </p>
+        <p>Under GDPR, data processing must have a legal basis:</p>
         <ul>
-            <li><strong>Legitimate Interest:</strong> The Extension processes minimal local data 
-            (preferences) based on legitimate interest in providing functionality</li>
-            <li><strong>Consent:</strong> By installing and using the Extension, you consent to 
-            local storage of preferences</li>
-            <li><strong>No Personal Data:</strong> Since no personal data is collected or processed, 
-            most GDPR obligations do not apply</li>
+            <li><strong>Legitimate Interest:</strong> The Extension processes minimal local data based on legitimate interest</li>
+            <li><strong>Consent:</strong> By installing and using the Extension, you consent to local storage</li>
+            <li><strong>No Personal Data:</strong> Since no personal data is collected, most GDPR obligations do not apply</li>
         </ul>
 
         <h2>17. Contact Information</h2>
-        <p>If you have questions, concerns, or requests regarding this privacy policy or the Extension:</p>
+        <p>If you have questions or concerns:</p>
         <p>
             <strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a><br>
-            <strong>Response Time:</strong> We aim to respond within 48-72 hours
+            <strong>Response Time:</strong> 48-72 hours
         </p>
         <p>Please include:</p>
         <ul>
-            <li>Subject line: "PPAS Extension Privacy Inquiry"</li>
+            <li>Subject: "PPAS Extension Privacy Inquiry"</li>
             <li>Your specific question or concern</li>
-            <li>Chrome version and Extension version (if technical issue)</li>
+            <li>Chrome and Extension versions (if technical)</li>
         </ul>
 
         <h2>18. Legal Disclaimer and Liability</h2>
         <div class="important">
             <strong>⚠️ IMPORTANT LEGAL NOTICE</strong>
             <p>
-                <strong>Unofficial Tool:</strong> This Extension is NOT endorsed, affiliated with, 
-                or supported by PPAS, Government of Odisha, or any government agency.
+                <strong>Unofficial Tool:</strong> This Extension is NOT endorsed by PPAS or Government of Odisha.
             </p>
             <p>
-                <strong>No Warranty:</strong> The Extension is provided "as is" without warranty of 
-                any kind, express or implied, including but not limited to warranties of merchantability, 
-                fitness for a particular purpose, or non-infringement.
+                <strong>No Warranty:</strong> The Extension is provided "as is" without warranty of any kind.
             </p>
             <p>
-                <strong>Limitation of Liability:</strong> The developer shall not be liable for any 
-                direct, indirect, incidental, special, consequential, or punitive damages arising from 
-                the use or inability to use this Extension.
+                <strong>Limitation of Liability:</strong> The developer shall not be liable for any damages 
+                arising from the use or inability to use this Extension.
             </p>
             <p>
-                <strong>User Responsibility:</strong> You assume all responsibility and risk for the 
-                use of this Extension and agree to comply with all applicable laws, regulations, and 
-                PPAS policies.
+                <strong>User Responsibility:</strong> You assume all responsibility and risk for the use of this Extension.
             </p>
         </div>
 
         <h2>19. Consent and Acceptance</h2>
-        <p>
-            By installing, accessing, or using the Token Approval Helper for PPAS Extension, you:
-        </p>
+        <p>By installing, accessing, or using the Extension, you:</p>
         <ol>
-            <li>Acknowledge that you have read and understood this privacy policy</li>
-            <li>Consent to the practices described in this privacy policy</li>
+            <li>Acknowledge that you have read this privacy policy</li>
+            <li>Consent to the practices described</li>
             <li>Confirm that you are an authorized PPAS administrator</li>
-            <li>Accept the terms and limitations outlined in this policy</li>
-            <li>Agree to use the Extension in compliance with all applicable laws and regulations</li>
+            <li>Accept the terms and limitations outlined</li>
+            <li>Agree to use the Extension in compliance with all laws</li>
         </ol>
 
         <h2>20. Summary - Key Takeaways</h2>
@@ -558,10 +688,10 @@
             <strong>📋 Privacy Policy Summary</strong>
             <ul>
                 <li><span class="checkmark">✓</span> We do NOT collect any personal data</li>
-                <li><span class="checkmark">✓</span> All processing happens locally in your browser</li>
-                <li><span class="checkmark">✓</span> No data is transmitted to external servers</li>
+                <li><span class="checkmark">✓</span> All processing happens locally</li>
+                <li><span class="checkmark">✓</span> No data transmitted to external servers</li>
                 <li><span class="checkmark">✓</span> Temporary preferences stored locally only</li>
-                <li><span class="checkmark">✓</span> No analytics, tracking, or third-party services</li>
+                <li><span class="checkmark">✓</span> No analytics or third-party services</li>
                 <li><span class="checkmark">✓</span> Extension only communicates with PPAS portal</li>
                 <li><span class="checkmark">✓</span> You maintain full control over your data</li>
             </ul>
